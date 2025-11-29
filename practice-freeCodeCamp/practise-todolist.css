@@ -1,0 +1,66 @@
+body {
+    background-color: #F0F0F0;
+}
+
+.box {
+    background-color: White;
+    width: 400px;
+    height: 555px;
+    margin: auto;
+    padding-bottom: 30px;
+    border-radius: 12px;
+    /* box-shadow: 5px;  */
+}
+
+h1 {
+    text-align: center;
+    padding-top: 24px;
+    font-size: 30px;
+}
+
+
+.sub-item {
+    width: 320px;
+    height: 50px;
+    background-color: #E5F1E5;
+    margin: 20px auto;  /* top right bottom left */ 
+    padding: 13px 0 40px 15px;
+    border-radius: 12px;
+    list-style-type: none;
+}
+
+input {
+    margin-right: 7px;
+}
+
+.todo-list {
+    padding: 0;
+    list-style: none;
+}
+
+
+.sub-item-link {
+    margin-top: 6px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    list-style: square;
+}
+
+
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover, a:active {
+    color: red;
+}
+
+a:focus {
+    outline: 2px red;
+}
+
+a:visited {
+    color: #800080;
+}
