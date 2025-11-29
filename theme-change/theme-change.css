@@ -1,0 +1,57 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --colour1-background: white;
+    --colour1-letter: black;
+    --colour2-background: rgb(12, 19, 43);
+    --colour2-letter: rgb(255, 249, 230);
+}
+
+body {
+    background-color: var(--colour1-background);
+    margin: 0;
+    overflow: hidden;
+}
+
+.dark {
+    background-color: var(--colour2-background);
+}
+
+#current-theme {
+    margin: 20px 20px 0 20px;
+    color: var(--colour1-letter);
+}
+
+.dark #current-theme {
+    color: var(--colour2-letter);
+}
+
+#change-button {
+    background-color: var(--colour2-background);
+    color: var(--colour2-letter);
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 17px;
+    border: 0;
+    border-radius: 3px;
+}
+
+#change-button:hover {
+    background-color: black;
+    transform: translateY(2%); 
+}
+
+.dark #change-button {
+    background-color: var(--colour1-background);
+    color: var(--colour1-letter);
+}
+
+.dark #change-button:hover {
+    background-color: rgb(255, 226, 188);
+    transform: translateY(2%); 
+}
+
