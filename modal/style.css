@@ -1,0 +1,56 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 234, 212);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body.dark {
+    background-color:  rgb(163, 155, 140);
+}
+
+
+
+#modal-open-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+#overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+}
+
+#modal-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+}
+
+#modal-close-button {
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    z-index: 100;
+}
+
+.hidden {
+    display: none !important;
+}
