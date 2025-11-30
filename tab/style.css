@@ -1,0 +1,53 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-colour: 47, 62, 70;
+    --main-colour: 168, 181, 195;
+    --sub-colour: 210, 216, 212;
+    --accent-colour: 194, 162, 126;
+}
+
+body {
+    background-color: rgb(var(--background-colour));
+    color: rgb(var(--main-colour));
+}
+
+#tab-button {
+    display: flex;
+    margin: 5px 15px 0 15px;
+}
+
+.tab-button {
+    padding: 5px 25px;
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.tab-button:hover {
+    background-color: rgba(var(--sub-colour), 0.3);
+}
+
+.tab-button.active {
+    background-color: rgb(var(--accent-colour));
+    color: rgb(var(--background-colour));
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+    margin: 10px;
+}
+
+.line {
+    width: 98vw;
+    height: 3px;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: rgb(var(--accent-colour));
+}
