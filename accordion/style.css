@@ -1,0 +1,58 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-colour: 47, 62, 70;
+    --main-colour: 224, 232, 241;
+    --sub-colour: 210, 216, 212;
+    --accent-colour: 194, 162, 126;
+}
+
+body {
+    background-color: rgb(var(--background-colour));
+    color: rgb(var(--main-colour));
+}
+
+h3 {
+    margin: 30px 20px 0 20px;
+}
+
+.accordion {
+    margin: 5px 30px 40px 30px;
+}
+
+.accordion-head {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: rgb(var(--background-colour));
+    color: rgb(var(--main-colour));
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.accordion-head .icon {
+    transition: transform 0.4s ease;
+}
+
+.accordion-head.active .icon {
+    transform: rotate(180deg);
+}
+
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+section {
+    margin: 40px 0px;
+}
+
+
+
